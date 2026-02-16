@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Premium pneumatic ground cover installation for commercial properties across California's Central Coast.",
     type: "website",
     url: "https://fleetscape.com",
-    images: [{ url: "/images/logo-with-tagline.svg" }],
+    images: [{ url: "/images/logo-with-tagline.png" }],
   },
 };
 
