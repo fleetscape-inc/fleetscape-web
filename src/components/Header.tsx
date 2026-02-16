@@ -43,7 +43,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logo-no-tagline.svg"
+              src="/images/logo-no-tagline.png"
               alt="Fleetscape"
               width={180}
               height={48}
