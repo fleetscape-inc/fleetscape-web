@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Fleetscape | Precision Ground Cover Installation — California Central Coast",
   description:
-    "Premium pneumatic ground cover installation for commercial properties, municipalities, and HOAs across California's Central Coast. Mulch, playground chips, erosion control, and decorative ground cover.",
+    "Premium pneumatic ground cover installation for commercial properties, municipalities, and HOAs across California's Central Coast. Mulch, playground chips, landscaper partnerships, and decorative ground cover.",
 };
 
 const services = [
   {
-    title: "Commercial Mulch Installation",
-    description: "Parks, HOAs, corporate campuses",
+    title: "Precision Ground Cover Application",
+    description: "Municipalities, Schools, HOAs, Corporate Campuses, Golf Courses, Estates",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 7.5h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
@@ -27,17 +27,17 @@ const services = [
     ),
   },
   {
-    title: "Erosion Control",
-    description: "Slope stabilization and soil protection",
+    title: "Landscapers",
+    description: "Subcontract our services to support your clients",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
       </svg>
     ),
   },
   {
     title: "Decorative Ground Cover",
-    description: "Bark, rubber, and stone applications",
+    description: "Bark, Mulch, Topsoil",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
@@ -50,12 +50,12 @@ const differentiators = [
   {
     title: "Pneumatic Precision",
     description:
-      "Our Express Blower EB-60 delivers material through 300 feet of hose with remote-controlled variable application rates. No wheelbarrows. No raking. No mess.",
+      "Our Commercial Blower Truck holds 60 cubic yards per trip and delivers material up to 600 feet with remote-controlled variable application rates. No wheelbarrows. No raking. No mess.",
   },
   {
     title: "Speed & Scale",
     description:
-      "We complete in 2 hours what takes a traditional crew an entire day. Less disruption to your property, your tenants, and your schedule.",
+      "We complete in hours what takes a traditional crew days. That means less disruption to your people and property.",
   },
   {
     title: "Commercial Grade",
@@ -80,9 +80,9 @@ export default function HomePage() {
               <span className="text-gold">Ground Cover</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed">
-              Premium pneumatic ground cover installation for commercial
-              properties, municipalities, and HOAs across California&apos;s
-              Central Coast.
+              Pneumatic ground cover application for Municipalities, Schools,
+              HOAs, Corporate Campuses, Golf Courses, Orchards and Estates
+              throughout California&apos;s Central Coast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Link
@@ -115,8 +115,8 @@ export default function HomePage() {
             <p className="text-lg text-charcoal/80 leading-relaxed">
               We use pneumatic blower truck technology to install ground cover
               materials with speed and precision that manual methods can&apos;t
-              match. One truck replaces a full crew — delivering material
-              through a 300-foot hose directly to the installation point.
+              match. One truck replaces a full crew — delivering material up
+              to 600 feet from the truck directly to the installation point.
               Projects that take days by hand are completed in hours.
             </p>
           </div>
