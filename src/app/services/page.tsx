@@ -4,19 +4,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | Fleetscape — Pneumatic Ground Cover Installation",
   description:
-    "Commercial mulch installation, playground safety surfacing, erosion control, and decorative ground cover. One truck, one operator, hundreds of cubic yards installed in hours.",
+    "Precision ground cover application, playground safety surfacing, landscaper partnerships, and decorative ground cover. One truck, one operator, hundreds of cubic yards installed in hours.",
   openGraph: {
     title: "Fleetscape Services",
     description:
-      "Commercial mulch, playground surfacing, erosion control, and decorative ground cover installation.",
+      "Precision ground cover, playground surfacing, landscaper partnerships, and decorative ground cover installation.",
   },
 };
 
 const services = [
   {
-    title: "Commercial Mulch Installation",
+    title: "Precision Ground Cover Application",
     description:
-      "For property managers, HOAs, municipalities, and commercial campuses. Our pneumatic system installs mulch evenly across large areas — no wheelbarrow tracks, no uneven spots, no crew trampling your landscaping. We work with bark mulch, wood chips, and shredded hardwood in any depth your specification requires.",
+      "For municipalities, schools, HOAs, corporate campuses, golf courses, and estates. Our pneumatic system installs ground cover evenly across large areas — no wheelbarrow tracks, no uneven spots, no crew trampling your landscaping. We work with bark mulch, wood chips, and shredded hardwood in any depth your specification requires.",
     features: [
       "Even coverage across large areas",
       "No wheelbarrow damage to existing landscaping",
@@ -36,23 +36,23 @@ const services = [
     ],
   },
   {
-    title: "Erosion Control",
+    title: "Landscapers",
     description:
-      "Protect slopes, hillsides, and disturbed soil with precision-applied ground cover. Our 300-foot hose reach means we can access steep grades and remote areas that traditional equipment can't reach. Ideal for post-construction site stabilization, fire damage restoration, and stormwater management.",
+      "Expand your service offering without expanding your fleet. We partner with landscaping companies to provide pneumatic ground cover installation as a subcontracted service — so you can offer your clients professional-grade mulch, bark, and topsoil installation without the capital investment in specialized equipment. Keep your clients happy and your margins healthy.",
     features: [
-      "300-foot hose reach for steep grades",
-      "Post-construction stabilization",
-      "Fire damage restoration",
-      "Stormwater management solutions",
+      "White-label subcontracting available",
+      "Seamless integration with your crew",
+      "Expand services without equipment investment",
+      "Reliable scheduling for your project timelines",
     ],
   },
   {
     title: "Decorative Ground Cover",
     description:
-      "Bark, rubber mulch, decorative stone, and specialty materials installed with precision. Whether you're refreshing a resort entrance, a golf course cart path, or a corporate campus, we deliver a finished result that looks professionally installed — because it is.",
+      "Bark, mulch, and topsoil installed with precision. Whether you're refreshing a resort entrance, a golf course cart path, or a corporate campus, we deliver a finished result that looks professionally installed — because it is.",
     features: [
-      "Bark, rubber mulch, decorative stone",
-      "Specialty material applications",
+      "Bark, mulch, topsoil",
+      "Precision application for any terrain",
       "Resort and hospitality grade finishing",
       "Corporate campus installations",
     ],
