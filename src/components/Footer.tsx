@@ -24,7 +24,7 @@ export function Footer() {
           {/* Logo & info */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo-with-tagline.png"
+              src="/images/logo-with-tagline.svg"
               alt="Fleetscape — Precision Ground Cover"
               width={200}
               height={60}
