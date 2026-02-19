@@ -10,7 +10,7 @@ const quickLinks = [
 
 const serviceAreas = [
   "Santa Barbara",
-  "Goleta",
+  "Montecito",
   "Ventura",
   "Oxnard",
   "Camarillo",
@@ -70,11 +70,6 @@ export function Footer() {
               <li>
                 <a href="mailto:hello@fleetscape.com" className="hover:text-white transition-colors">
                   hello@fleetscape.com
-                </a>
-              </li>
-              <li>
-                <a href="mailto:careers@fleetscape.com" className="hover:text-white transition-colors">
-                  careers@fleetscape.com
                 </a>
               </li>
             </ul>

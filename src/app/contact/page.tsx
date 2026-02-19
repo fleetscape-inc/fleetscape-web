@@ -4,7 +4,7 @@ import { ContactForm } from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact Fleetscape | Get a Free Estimate",
   description:
-    "Get a free estimate for pneumatic ground cover installation. Serving Santa Barbara, Goleta, Ventura, Oxnard, Camarillo, and communities along the Highway 101 corridor.",
+    "Get a free estimate for pneumatic ground cover installation. Serving Santa Barbara, Montecito, Ventura, Oxnard, Camarillo, and communities along the Highway 101 corridor.",
   openGraph: {
     title: "Contact Fleetscape",
     description:
@@ -96,7 +96,7 @@ export default function ContactPage() {
                       Service Area
                     </div>
                     <p className="text-charcoal/80 leading-relaxed">
-                      Santa Barbara, Goleta, Ventura, Oxnard, Camarillo — and
+                      Santa Barbara, Montecito, Ventura, Oxnard, Camarillo — and
                       communities along the Highway 101 corridor
                     </p>
                   </div>
