@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Fleetscape | Precision Ground Cover Installation",
   description:
-    "Fleetscape, Inc. is a Delaware C-Corporation specializing in pneumatic ground cover installation using Express Blower technology. Serving California's Central Coast.",
+    "Fleetscape, Inc. specializes in pneumatic ground cover installation, serving California's Central Coast from Santa Barbara.",
   openGraph: {
     title: "About Fleetscape",
     description:
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const specs = [
-  { label: "Capacity", value: "Up to 80 cubic yards per load" },
-  { label: "Reach", value: "300+ feet of hose from truck to installation point" },
+  { label: "Capacity", value: "60 cubic yards per load" },
+  { label: "Reach", value: "Up to 600 feet of hose from truck to installation point" },
   { label: "Application", value: "Remote-controlled variable rate for precise depth" },
   { label: "Materials", value: "Mulch, engineered wood fiber, compost, bark, soil amendments" },
   { label: "Advantage", value: "Reaches tight spaces, slopes, and areas inaccessible to traditional equipment" },
@@ -23,7 +23,7 @@ const credentials = [
   { title: "California Contractor License (C-27)", status: "Pending", icon: "license" },
   { title: "USDOT #4530173", status: "Active", icon: "dot" },
   { title: "FMCSA Registered", status: "Active", icon: "fmcsa" },
-  { title: "Fully Insured", status: "General Liability + Commercial Auto", icon: "insurance" },
+  { title: "Insured & Bonded", status: "General Liability + Commercial Auto", icon: "insurance" },
   { title: "Drug & Alcohol Testing", status: "FMCSA Clearinghouse Compliant", icon: "testing" },
 ];
 
@@ -56,21 +56,19 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
-                Fleetscape, Inc. is a Delaware C-Corporation headquartered in
-                Ventura County, California, specializing in pneumatic ground
-                cover installation. We use Express Blower technology — the same
-                systems trusted by the largest landscape contractors in the
-                country — to deliver mulch, playground chips, compost, and
-                other ground cover materials with unmatched speed and precision.
+                Fleetscape, Inc. is headquartered in Santa Barbara, California,
+                and specializes in pneumatic ground cover installation. We
+                deliver mulch, playground chips, compost, and other ground
+                cover materials with unmatched speed and precision.
               </p>
               <p>
                 Founded by Seth and Melissa Henderson, Fleetscape exists to
                 bring commercial-grade ground cover solutions to a market
                 that&apos;s been stuck doing things the hard way. While
                 competitors still rely on wheelbarrows and manual labor, we
-                deploy a 2015 Freightliner 114SD equipped with an Express
-                Blower EB-60 pneumatic system that can install up to 80 cubic
-                yards of material per load through 300 feet of hose.
+                deploy a specialized pneumatic blower truck system that can
+                install up to 60 cubic yards of material per load through
+                600 feet of hose.
               </p>
             </div>
           </div>
@@ -85,7 +83,7 @@ export default function AboutPage() {
               Our Equipment
             </h2>
             <p className="text-concrete mb-12">
-              2015 Freightliner 114SD with Express Blower EB-60
+              Commercial pneumatic blower truck system
             </p>
           </div>
 
@@ -94,10 +92,10 @@ export default function AboutPage() {
             <div className="aspect-[21/9] bg-gradient-to-br from-forest via-forest-light to-charcoal flex items-center justify-center">
               <div className="text-center">
                 <div className="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tight text-white/10">
-                  EB-60
+                  Blower Truck
                 </div>
                 <div className="font-heading text-sm uppercase tracking-[0.3em] text-gold/60 mt-2">
-                  Express Blower System
+                  Pneumatic Installation System
                 </div>
               </div>
             </div>
