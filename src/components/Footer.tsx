@@ -88,7 +88,6 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
             <p>USDOT #4530173 | CSLB License Pending</p>
             <p>&copy; {new Date().getFullYear()} Fleetscape, Inc. All rights reserved.</p>
-            <p>Fleetscape, Inc. is a Delaware C-Corporation</p>
           </div>
         </div>
       </div>
