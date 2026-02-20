@@ -61,8 +61,8 @@ export default function AboutPage() {
                 cover materials with unmatched speed and precision.
               </p>
               <p>
-                Founded by Seth and Melissa Henderson, Fleetscape exists to
-                bring commercial-grade ground cover solutions to a market
+                Fleetscape exists to bring commercial-grade ground cover
+                solutions to a market
                 that&apos;s been stuck doing things the hard way. While
                 competitors still rely on wheelbarrows and manual labor, we
                 deploy a specialized pneumatic blower truck system that can
