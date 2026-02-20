@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://fleetscape.com"),
   title: "Fleetscape | Precision Ground Cover Installation — California Central Coast",
   description:
-    "Premium pneumatic ground cover installation for commercial properties, municipalities, and HOAs across California's Central Coast. Mulch, playground chips, erosion control, and decorative ground cover installed with blower truck precision.",
+    "Premium pneumatic ground cover installation for commercial properties, municipalities, and HOAs across California's Central Coast. Mulch, playground chips, and erosion control installed with blower truck precision.",
   openGraph: {
     title: "Fleetscape | Precision Ground Cover Installation",
     description:
