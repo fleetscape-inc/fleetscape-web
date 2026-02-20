@@ -123,7 +123,6 @@ export default function CareersPage() {
     <>
       {/* ═══ HERO ═══ */}
       <section className="relative min-h-[60vh] flex items-center bg-charcoal overflow-hidden">
-        {/* Gradient + decorative radial */}
         <div className="absolute inset-0 bg-gradient-to-br from-forest via-[#0D2818] to-[#0D2818]" />
         <div className="absolute -top-[50%] -right-[20%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(212,168,67,0.08)_0%,transparent_70%)] pointer-events-none" />
 
@@ -157,10 +156,9 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* ═══ CONTENT SECTIONS ═══ */}
-      <div className="mx-auto max-w-[800px] px-6">
-        {/* ── The Role ── */}
-        <section className="py-14 border-b border-black/[0.06] fade-in">
+      {/* ═══ The Role ═══ */}
+      <section className="py-14 bg-cream">
+        <div className="mx-auto max-w-[800px] px-6 fade-in">
           <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
             The Role
           </div>
@@ -191,7 +189,7 @@ export default function CareersPage() {
             <h3 className="font-heading text-lg font-bold uppercase tracking-tight text-forest mb-3">
               Your Rig
             </h3>
-            <p className="text-base text-concrete leading-[1.7] mb-0">
+            <p className="text-base text-concrete leading-[1.7]">
               You&apos;ll be operating purpose-built equipment that most CDL
               drivers never see.
             </p>
@@ -204,10 +202,12 @@ export default function CareersPage() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Responsibilities ── */}
-        <section className="py-14 border-b border-black/[0.06] fade-in">
+      {/* ═══ Responsibilities ═══ */}
+      <section className="py-14 bg-cream border-t border-black/[0.06]">
+        <div className="mx-auto max-w-[800px] px-6 fade-in">
           <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
             What You&apos;ll Do
           </div>
@@ -226,10 +226,12 @@ export default function CareersPage() {
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Requirements ── */}
-        <section className="py-14 border-b border-black/[0.06] fade-in">
+      {/* ═══ Requirements ═══ */}
+      <section className="py-14 bg-cream border-t border-black/[0.06]">
+        <div className="mx-auto max-w-[800px] px-6 fade-in">
           <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
             Requirements
           </div>
@@ -265,17 +267,19 @@ export default function CareersPage() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Compensation ── */}
-        <section className="py-14 border-b border-black/[0.06] fade-in">
+      {/* ═══ Compensation ═══ */}
+      <section className="py-14 bg-cream border-t border-black/[0.06]">
+        <div className="mx-auto max-w-[800px] px-6 fade-in">
           <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
             Compensation
           </div>
           <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-forest mb-5">
             Premium Pay for Premium Work
           </h2>
-          <p className="text-base text-concrete leading-[1.7] mb-0">
+          <p className="text-base text-concrete leading-[1.7]">
             This isn&apos;t a mega-carrier gig paying you by the mile to sit in
             traffic on the 5. We pay well because this work is specialized,
             physical, and client-facing — and because the right driver is worth
@@ -317,10 +321,12 @@ export default function CareersPage() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Growth ── */}
-        <section className="py-14 fade-in">
+      {/* ═══ Growth ═══ */}
+      <section className="py-14 bg-cream border-t border-black/[0.06]">
+        <div className="mx-auto max-w-[800px] px-6 fade-in">
           <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
             Growth
           </div>
@@ -353,47 +359,42 @@ export default function CareersPage() {
               </div>
             ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* ═══ APPLICATION FORM ═══ */}
       <section className="bg-white border-t-4 border-forest py-16 px-6" id="apply">
-        <div className="mx-auto max-w-[600px]">
-          <div className="text-center mb-9 fade-in">
-            <div className="font-heading text-xs uppercase tracking-[2.5px] font-bold text-forest-light mb-3">
+        <div className="mx-auto max-w-2xl">
+          <div className="text-center mb-12 fade-in">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-forest mb-4">
               Apply Now
-            </div>
-            <h2 className="font-heading text-[28px] font-bold uppercase tracking-tight text-forest mb-2">
-              Let&apos;s Talk
             </h2>
-            <p className="text-[15px] text-concrete">
-              Fill out the basics below. If your experience looks like a fit,
-              Seth will reach out directly — usually within 24 hours.
+            <p className="text-concrete">
+              Fill out the form below and we&apos;ll be in touch within 48 hours.
             </p>
           </div>
 
           <CareersForm />
-        </div>
-      </section>
 
-      {/* ═══ FOOTER CTA ═══ */}
-      <section className="bg-forest py-10 px-6 text-center">
-        <p className="text-sm text-white/60">
-          Questions? Email{" "}
-          <a
-            href="mailto:careers@fleetscape.com"
-            className="text-gold font-semibold hover:text-gold-bright transition-colors"
-          >
-            careers@fleetscape.com
-          </a>{" "}
-          or call{" "}
-          <a
-            href="tel:8058495050"
-            className="text-gold font-semibold hover:text-gold-bright transition-colors"
-          >
-            (805) 849-5050
-          </a>
-        </p>
+          <div className="mt-8 text-center text-sm text-concrete">
+            <p>
+              Questions? Email us at{" "}
+              <a
+                href="mailto:careers@fleetscape.com"
+                className="text-forest hover:text-gold transition-colors font-semibold"
+              >
+                careers@fleetscape.com
+              </a>{" "}
+              or call{" "}
+              <a
+                href="tel:8058495050"
+                className="text-forest hover:text-gold transition-colors font-semibold"
+              >
+                (805) 849-5050
+              </a>
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
