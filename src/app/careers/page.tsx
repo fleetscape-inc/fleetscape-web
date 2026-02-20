@@ -203,13 +203,6 @@ export default function CareersPage() {
                   className="text-forest hover:text-gold transition-colors font-semibold"
                 >
                   careers@fleetscape.com
-                </a>{" "}
-                or call{" "}
-                <a
-                  href="tel:8058495050"
-                  className="text-forest hover:text-gold transition-colors font-semibold"
-                >
-                  (805) 849-5050
                 </a>
               </p>
             </div>
