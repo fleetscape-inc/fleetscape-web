@@ -95,7 +95,6 @@ const compDetails = [
   { label: "Starting Commitment", value: "4\u20138 hrs/week, scaling", highlight: false },
   { label: "Performance Bonuses", value: "Yes \u2014 details at interview", highlight: true },
   { label: "Equipment Training", value: "Paid \u2014 on us", highlight: false },
-  { label: "Employment Type", value: "W-2 Employee", highlight: false },
 ];
 
 const growthTimeline = [
