@@ -25,6 +25,13 @@ const services = [
       "Resort and hospitality grade finishing",
       "Custom depth specifications",
     ],
+    image: {
+      src: "/images/fleetscape-golf-course.webp",
+      alt: "Precision ground cover application on a golf course by Fleetscape",
+      width: 1536,
+      height: 1024,
+      className: "w-full h-full object-cover",
+    },
   },
   {
     title: "Playground Safety Surfacing",
@@ -36,6 +43,13 @@ const services = [
       "Precise depth for equipment fall height",
       "Superior compaction consistency",
     ],
+    image: {
+      src: "/images/fleetscape-playground-chips.webp",
+      alt: "Engineered wood fiber playground safety surfacing installed by Fleetscape",
+      width: 1536,
+      height: 1024,
+      className: "w-full h-full object-cover",
+    },
   },
   {
     title: "Fleetscape for Landscapers",
@@ -49,6 +63,14 @@ const services = [
       "Expand services without equipment investment",
       "Reliable scheduling for your project timelines",
     ],
+    image: {
+      src: "/images/fleetscape-for-landscapers-infographic.jpg",
+      alt: "Fleetscape for Landscapers — how partnering with Fleetscape frees your crew for higher-margin work",
+      width: 1024,
+      height: 687,
+      className: "w-full h-full object-contain",
+      bgClass: "bg-cream",
+    },
   },
 ];
 
@@ -104,37 +126,15 @@ export default function ServicesPage() {
 
                   {/* Visual */}
                   <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                    {i === 0 ? (
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <Image
-                          src="/images/fleetscape-golf-course.png"
-                          alt="Precision ground cover application on a golf course by Fleetscape"
-                          width={1536}
-                          height={1024}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : i === 1 ? (
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <Image
-                          src="/images/fleetscape-playground-chips.png"
-                          alt="Engineered wood fiber playground safety surfacing installed by Fleetscape"
-                          width={1536}
-                          height={1024}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ) : (
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden bg-cream">
-                        <Image
-                          src="/images/fleetscape-for-landscapers-infographic.jpg"
-                          alt="Fleetscape for Landscapers — how partnering with Fleetscape frees your crew for higher-margin work"
-                          width={1024}
-                          height={687}
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
-                    )}
+                    <div className={`aspect-[4/3] rounded-lg overflow-hidden ${service.image.bgClass ?? ""}`}>
+                      <Image
+                        src={service.image.src}
+                        alt={service.image.alt}
+                        width={service.image.width}
+                        height={service.image.height}
+                        className={service.image.className}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
