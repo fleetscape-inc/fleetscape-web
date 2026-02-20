@@ -47,247 +47,233 @@ export function CareersForm() {
         </h3>
         <p className="text-concrete">
           Thanks for your interest in Fleetscape. We&apos;ll review your
-          application and reach out directly — usually within 24 hours.
+          application and contact you within 48 hours.
         </p>
       </div>
     );
   }
 
   const inputClass =
-    "w-full px-4 py-3 bg-cream border border-concrete/20 rounded-lg text-charcoal placeholder:text-concrete/50 focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-colors";
-  const labelClass = "block text-sm font-semibold text-charcoal mb-1.5";
-  const selectClass =
-    "w-full px-4 py-3 bg-cream border border-concrete/20 rounded-lg text-charcoal focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-colors appearance-none";
-
-  const selectChevron = (
-    <svg
-      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-concrete"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-  );
+    "w-full px-4 py-3 bg-white border border-concrete/20 rounded text-charcoal placeholder:text-concrete/50 focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors";
+  const labelClass =
+    "block text-sm font-semibold text-charcoal mb-1.5";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
-      {/* Hidden fields */}
-      <input type="hidden" name="_subject" value="CDL Driver Application — Fleetscape Careers" />
-
-      {/* First & Last Name */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 md:p-10 border border-concrete/10 shadow-sm">
+      <div className="space-y-6">
+        {/* Full Name */}
         <div>
-          <label htmlFor="careers-first-name" className={labelClass}>
-            First Name <span className="text-red-600">*</span>
+          <label htmlFor="name" className={labelClass}>
+            Full Name <span className="text-gold">*</span>
           </label>
           <input
             type="text"
-            id="careers-first-name"
-            name="first_name"
+            id="name"
+            name="name"
             required
             className={inputClass}
-            placeholder="First name"
+            placeholder="Your full name"
           />
         </div>
-        <div>
-          <label htmlFor="careers-last-name" className={labelClass}>
-            Last Name <span className="text-red-600">*</span>
-          </label>
-          <input
-            type="text"
-            id="careers-last-name"
-            name="last_name"
-            required
-            className={inputClass}
-            placeholder="Last name"
-          />
-        </div>
-      </div>
 
-      {/* Phone & Email */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="careers-phone" className={labelClass}>
-            Phone <span className="text-red-600">*</span>
-          </label>
-          <input
-            type="tel"
-            id="careers-phone"
-            name="phone"
-            required
-            className={inputClass}
-            placeholder="(805) 555-0100"
-          />
+        {/* Phone & Email */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="phone" className={labelClass}>
+              Phone Number <span className="text-gold">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              className={inputClass}
+              placeholder="(805) 555-0100"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className={labelClass}>
+              Email Address <span className="text-gold">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className={inputClass}
+              placeholder="you@email.com"
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="careers-email" className={labelClass}>
-            Email <span className="text-red-600">*</span>
-          </label>
-          <input
-            type="email"
-            id="careers-email"
-            name="email"
-            required
-            className={inputClass}
-            placeholder="you@email.com"
-          />
-        </div>
-      </div>
 
-      {/* CDL Class & Years */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="careers-cdl-class" className={labelClass}>
-            CDL Class <span className="text-red-600">*</span>
-          </label>
-          <div className="relative">
+        {/* CDL Class & Issuance Date */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="cdl_class" className={labelClass}>
+              CDL Class <span className="text-gold">*</span>
+            </label>
             <select
-              id="careers-cdl-class"
+              id="cdl_class"
               name="cdl_class"
               required
-              className={selectClass}
+              className={inputClass}
               defaultValue=""
             >
-              <option value="" disabled>Select</option>
-              <option value="Class B">Class B</option>
+              <option value="" disabled>
+                Select CDL Class
+              </option>
               <option value="Class A">Class A</option>
+              <option value="Class B">Class B</option>
             </select>
-            {selectChevron}
           </div>
-        </div>
-        <div>
-          <label htmlFor="careers-cdl-years" className={labelClass}>
-            Years with CDL <span className="text-red-600">*</span>
-          </label>
-          <div className="relative">
-            <select
-              id="careers-cdl-years"
-              name="cdl_years"
+          <div>
+            <label htmlFor="cdl_issuance_date" className={labelClass}>
+              CDL Issuance Date <span className="text-gold">*</span>
+            </label>
+            <input
+              type="date"
+              id="cdl_issuance_date"
+              name="cdl_issuance_date"
               required
-              className={selectClass}
-              defaultValue=""
-            >
-              <option value="" disabled>Select</option>
-              <option value="Less than 3">Less than 3 years</option>
-              <option value="3-5 years">3–5 years</option>
-              <option value="5-10 years">5–10 years</option>
-              <option value="10+ years">10+ years</option>
-            </select>
-            {selectChevron}
+              className={inputClass}
+            />
           </div>
         </div>
-      </div>
 
-      {/* CDL Number */}
-      <div>
-        <label htmlFor="careers-cdl-number" className={labelClass}>
-          CDL Number &amp; Issuing State <span className="text-red-600">*</span>
-        </label>
-        <input
-          type="text"
-          id="careers-cdl-number"
-          name="cdl_number"
-          required
-          className={inputClass}
-          placeholder="e.g. CA B1234567"
-        />
-      </div>
+        {/* Years of Experience */}
+        <div>
+          <label htmlFor="years_experience" className={labelClass}>
+            Years of Commercial Driving Experience
+          </label>
+          <input
+            type="number"
+            id="years_experience"
+            name="years_experience"
+            min="0"
+            max="50"
+            className={inputClass}
+            placeholder="e.g. 5"
+          />
+        </div>
 
-      {/* DOT Medical Card */}
-      <div>
-        <label htmlFor="careers-dot-medical" className={labelClass}>
-          Current DOT Medical Card? <span className="text-red-600">*</span>
-        </label>
-        <div className="relative">
+        {/* Moving Violations */}
+        <div>
+          <label className={labelClass}>
+            Do you have any moving violations in the past 3 years? <span className="text-gold">*</span>
+          </label>
+          <div className="flex gap-6 mt-2">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="radio"
+                name="moving_violations"
+                value="Yes"
+                required
+                className="w-4 h-4 text-forest accent-forest"
+              />
+              <span className="text-charcoal">Yes</span>
+            </label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="radio"
+                name="moving_violations"
+                value="No"
+                className="w-4 h-4 text-forest accent-forest"
+              />
+              <span className="text-charcoal">No</span>
+            </label>
+          </div>
+        </div>
+
+        {/* FMCSA Clearinghouse */}
+        <div>
+          <label className={labelClass}>
+            Are you registered with the FMCSA Drug &amp; Alcohol Clearinghouse? <span className="text-gold">*</span>
+          </label>
+          <div className="flex gap-6 mt-2">
+            {["Yes", "No", "Not Sure"].map((opt) => (
+              <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="fmcsa_clearinghouse"
+                  value={opt}
+                  required
+                  className="w-4 h-4 text-forest accent-forest"
+                />
+                <span className="text-charcoal">{opt}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {/* Availability */}
+        <div>
+          <label className={labelClass}>Availability</label>
+          <div className="flex flex-wrap gap-4 mt-2">
+            {["Weekends", "Weekdays", "Both", "Flexible"].map((opt) => (
+              <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="availability"
+                  value={opt}
+                  className="w-4 h-4 accent-forest"
+                />
+                <span className="text-charcoal">{opt}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {/* How did you hear about this position */}
+        <div>
+          <label htmlFor="referral_source" className={labelClass}>
+            How did you hear about this position?
+          </label>
           <select
-            id="careers-dot-medical"
-            name="dot_medical"
-            required
-            className={selectClass}
+            id="referral_source"
+            name="referral_source"
+            className={inputClass}
             defaultValue=""
           >
-            <option value="" disabled>Select</option>
-            <option value="Yes - Current">Yes — Current</option>
-            <option value="Expired - Can Renew">Expired — Can renew quickly</option>
-            <option value="No">No</option>
+            <option value="" disabled>
+              Select one
+            </option>
+            <option value="Indeed">Indeed</option>
+            <option value="Craigslist">Craigslist</option>
+            <option value="Referral">Referral</option>
+            <option value="Other">Other</option>
           </select>
-          {selectChevron}
         </div>
-      </div>
 
-      {/* Moving Violations */}
-      <div>
-        <label htmlFor="careers-violations" className={labelClass}>
-          Any moving violations, accidents, or license actions in the past 3 years? <span className="text-red-600">*</span>
-        </label>
-        <div className="relative">
-          <select
-            id="careers-violations"
-            name="violations"
-            required
-            className={selectClass}
-            defaultValue=""
-          >
-            <option value="" disabled>Select</option>
-            <option value="None">None — Clean record</option>
-            <option value="1 Minor">1 minor violation (speeding under 15 over, etc.)</option>
-            <option value="2+ or Major">2+ violations or a major violation</option>
-          </select>
-          {selectChevron}
+        {/* Additional Notes */}
+        <div>
+          <label htmlFor="notes" className={labelClass}>
+            Additional Notes
+          </label>
+          <textarea
+            id="notes"
+            name="notes"
+            rows={4}
+            className={inputClass}
+            placeholder="Anything else you'd like us to know..."
+          />
         </div>
+
+        {/* Error */}
+        {error && (
+          <div className="p-4 bg-red-50 border border-red-200 rounded text-red-700 text-sm">
+            {error}
+          </div>
+        )}
+
+        {/* Submit */}
+        <button
+          type="submit"
+          disabled={submitting}
+          className="w-full px-8 py-4 bg-gold text-charcoal font-heading text-lg uppercase tracking-wider font-semibold rounded hover:bg-gold-bright transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {submitting ? "Submitting..." : "Submit Application"}
+        </button>
       </div>
-
-      {/* Relevant Experience */}
-      <div>
-        <label htmlFor="careers-experience" className={labelClass}>
-          Relevant Experience
-        </label>
-        <textarea
-          id="careers-experience"
-          name="experience"
-          rows={4}
-          className={inputClass}
-          placeholder="Tell us about your driving background — types of trucks, industries, anything relevant. Blower truck or landscaping experience is a plus but not required."
-        />
-      </div>
-
-      {/* Availability */}
-      <div>
-        <label htmlFor="careers-availability" className={labelClass}>
-          Availability
-        </label>
-        <textarea
-          id="careers-availability"
-          name="availability"
-          rows={3}
-          className={inputClass}
-          placeholder="Which afternoons and weekends work best for you? Any scheduling constraints we should know about?"
-        />
-      </div>
-
-      {/* Error */}
-      {error && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
-          {error}
-        </div>
-      )}
-
-      {/* Submit */}
-      <button
-        type="submit"
-        disabled={submitting}
-        className="w-full px-8 py-4 bg-forest text-white font-heading text-lg uppercase tracking-wider font-semibold rounded-lg hover:bg-forest-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        {submitting ? "Submitting..." : "Submit Application"}
-      </button>
-
-      <p className="text-center text-xs text-concrete">
-        We&apos;ll review your application and respond within 24 hours. All
-        applicants must pass a DOT pre-employment drug screen and FMCSA
-        Clearinghouse verification.
-      </p>
     </form>
   );
 }
