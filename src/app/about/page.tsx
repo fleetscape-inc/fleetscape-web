@@ -23,8 +23,7 @@ const credentials = [
   { title: "California Contractor License (C-27)", status: "Pending", icon: "license" },
   { title: "USDOT #4530173", status: "Active", icon: "dot" },
   { title: "FMCSA Registered", status: "Active", icon: "fmcsa" },
-  { title: "Insured & Bonded", status: "General Liability + Commercial Auto", icon: "insurance" },
-  { title: "Drug & Alcohol Testing", status: "FMCSA Clearinghouse Compliant", icon: "testing" },
+  { title: "Insured & Bonded", status: "Fully covered so you don\u2019t have to worry", icon: "insurance" },
 ];
 
 export default function AboutPage() {
