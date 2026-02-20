@@ -105,7 +105,17 @@ export default function ServicesPage() {
 
                   {/* Visual */}
                   <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                    {i === 1 ? (
+                    {i === 0 ? (
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                        <Image
+                          src="/images/fleetscape-golf-course.png"
+                          alt="Precision ground cover application on a golf course by Fleetscape"
+                          width={1536}
+                          height={1024}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ) : i === 1 ? (
                       <div className="aspect-[4/3] rounded-lg overflow-hidden">
                         <Image
                           src="/images/fleetscape-playground-chips.png"
