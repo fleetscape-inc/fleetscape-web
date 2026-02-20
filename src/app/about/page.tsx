@@ -91,7 +91,7 @@ export default function AboutPage() {
           {/* Equipment image */}
           <div className="mb-12 rounded-lg overflow-hidden fade-in">
             <Image
-              src="/images/fleetscape-coast-truck-feature.png"
+              src="/images/fleetscape-coast-truck-feature.webp"
               alt="Fleetscape pneumatic blower truck on California's Central Coast"
               width={1536}
               height={1024}
