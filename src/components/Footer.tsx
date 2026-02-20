@@ -63,11 +63,6 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
-                <a href="tel:8058495050" className="hover:text-white transition-colors">
-                  (805) 849-5050
-                </a>
-              </li>
-              <li>
                 <a href="mailto:hello@fleetscape.com" className="hover:text-white transition-colors">
                   hello@fleetscape.com
                 </a>
