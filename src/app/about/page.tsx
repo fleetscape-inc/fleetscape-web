@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Fleetscape | Precision Ground Cover Installation",
@@ -56,9 +57,9 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
-                Fleetscape, Inc. is a Delaware C-Corporation headquartered in
-                Ventura County, California, specializing in pneumatic ground
-                cover installation. We use Express Blower technology — the same
+                Fleetscape, Inc. specializes in pneumatic ground cover
+                installation for California&apos;s Central Coast from Santa
+                Barbara to Camarillo. We use Express Blower technology — the same
                 systems trusted by the largest landscape contractors in the
                 country — to deliver mulch, playground chips, compost, and
                 other ground cover materials with unmatched speed and precision.
@@ -89,18 +90,15 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Equipment visual placeholder */}
+          {/* Equipment image */}
           <div className="mb-12 rounded-lg overflow-hidden fade-in">
-            <div className="aspect-[21/9] bg-gradient-to-br from-forest via-forest-light to-charcoal flex items-center justify-center">
-              <div className="text-center">
-                <div className="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tight text-white/10">
-                  EB-60
-                </div>
-                <div className="font-heading text-sm uppercase tracking-[0.3em] text-gold/60 mt-2">
-                  Express Blower System
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/images/fleetscape-coast-truck-feature.png"
+              alt="Fleetscape 2015 Freightliner 114SD with Express Blower EB-60 on California's Central Coast"
+              width={1536}
+              height={1024}
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Specs grid */}
