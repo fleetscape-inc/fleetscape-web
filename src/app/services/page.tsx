@@ -45,6 +45,7 @@ const services = [
       "White-label subcontracting available",
       "Seamless integration with your crew",
       "Free your team for more profitable jobs",
+      "Contractor pricing that keeps your margins healthy",
       "Expand services without equipment investment",
       "Reliable scheduling for your project timelines",
     ],
@@ -124,13 +125,13 @@ export default function ServicesPage() {
                         />
                       </div>
                     ) : (
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden bg-cream">
                         <Image
                           src="/images/fleetscape-for-landscapers-infographic.jpg"
                           alt="Fleetscape for Landscapers — how partnering with Fleetscape frees your crew for higher-margin work"
                           width={1024}
                           height={687}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
                     )}
