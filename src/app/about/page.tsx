@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Fleetscape | Precision Ground Cover Installation",
@@ -55,10 +56,11 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
               <p>
-                Fleetscape, Inc. is headquartered in Santa Barbara, California,
-                and specializes in pneumatic ground cover installation. We
-                deliver mulch, playground chips, compost, and other ground
-                cover materials with unmatched speed and precision.
+                Fleetscape, Inc. specializes in pneumatic ground cover
+                installation for California&apos;s Central Coast from Santa
+                Barbara to Camarillo. We deliver mulch, playground chips,
+                compost, and other ground cover materials with unmatched speed
+                and precision.
               </p>
               <p>
                 Fleetscape exists to bring commercial-grade ground cover
@@ -86,18 +88,15 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Equipment visual placeholder */}
+          {/* Equipment image */}
           <div className="mb-12 rounded-lg overflow-hidden fade-in">
-            <div className="aspect-[21/9] bg-gradient-to-br from-forest via-forest-light to-charcoal flex items-center justify-center">
-              <div className="text-center">
-                <div className="font-heading text-6xl md:text-8xl font-bold uppercase tracking-tight text-white/10">
-                  Blower Truck
-                </div>
-                <div className="font-heading text-sm uppercase tracking-[0.3em] text-gold/60 mt-2">
-                  Pneumatic Installation System
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/images/fleetscape-coast-truck-feature.png"
+              alt="Fleetscape pneumatic blower truck on California's Central Coast"
+              width={1536}
+              height={1024}
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Specs grid */}
