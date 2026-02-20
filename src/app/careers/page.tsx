@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CareersForm } from "./CareersForm";
 
 export const metadata: Metadata = {
-  title: "CDL Driver Jobs | Fleetscape Careers — $40/hr, Ventura County CA",
+  title: "CDL Driver Jobs | Fleetscape Careers — $40/hr, Santa Barbara CA",
   description:
     "Join Fleetscape as a CDL driver operating a pneumatic blower truck. $40/hr starting, performance bonuses, local routes, home every night. Class B CDL required. Apply now.",
   openGraph: {
@@ -24,7 +24,7 @@ const heroStats = [
 const responsibilities = [
   {
     bold: "Drive and operate",
-    text: "the Freightliner 114SD with Express Blower system to commercial job sites across the Santa Barbara to Camarillo corridor.",
+    text: "our pneumatic blower truck to commercial job sites across the Santa Barbara to Camarillo corridor.",
   },
   {
     bold: "Load material",
@@ -82,12 +82,12 @@ const niceToHave = [
 ];
 
 const equipmentSpecs = [
-  "2015 Freightliner 114SD",
-  "Express Blower EB-60 System",
+  "Commercial Blower Truck",
+  "Pneumatic Installation System",
   "Pneumatic Material Delivery",
   "Local Routes \u2014 101 Corridor",
-  "100+ CY/Day Capacity",
-  "300 ft. Hose Reach",
+  "60 CY Per Load",
+  "600 ft. Hose Reach",
 ];
 
 const compDetails = [
@@ -101,7 +101,7 @@ const growthTimeline = [
   {
     phase: "Months 1\u20133",
     title: "Learn the Equipment & Build the Rhythm",
-    desc: "Part-time afternoon and weekend dispatches. Paid training on the Express Blower system. Get comfortable with the rig, the routes, and the clients.",
+    desc: "Part-time afternoon and weekend dispatches. Paid training on the blower system. Get comfortable with the rig, the routes, and the clients.",
   },
   {
     phase: "Months 3\u20136",
@@ -168,9 +168,9 @@ export default function CareersPage() {
             Fleetscape installs premium commercial ground cover — mulch,
             playground safety surfacing, and engineered wood fiber — using
             pneumatic blower truck technology. Instead of wheelbarrows and rakes,
-            we use a 2015 Freightliner 114SD equipped with an Express Blower
-            EB-60 system that places material at 100+ cubic yards per day
-            through a 300-foot hose.
+            we use a specialized pneumatic blower truck system that places
+            up to 60 cubic yards of material per load through 600 feet of
+            hose.
           </p>
           <p className="text-base text-concrete leading-[1.7] mb-4">
             This is a part-time position with real runway. You&apos;ll start at

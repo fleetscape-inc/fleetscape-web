@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Fleetscape | Precision Ground Cover Installation",
   description:
-    "Fleetscape, Inc. is a Delaware C-Corporation specializing in pneumatic ground cover installation using Express Blower technology. Serving California's Central Coast.",
+    "Fleetscape, Inc. specializes in pneumatic ground cover installation, serving California's Central Coast from Santa Barbara.",
   openGraph: {
     title: "About Fleetscape",
     description:
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const specs = [
-  { label: "Capacity", value: "Up to 80 cubic yards per load" },
-  { label: "Reach", value: "300+ feet of hose from truck to installation point" },
+  { label: "Capacity", value: "60 cubic yards per load" },
+  { label: "Reach", value: "Up to 600 feet of hose from truck to installation point" },
   { label: "Application", value: "Remote-controlled variable rate for precise depth" },
   { label: "Materials", value: "Mulch, engineered wood fiber, compost, bark, soil amendments" },
   { label: "Advantage", value: "Reaches tight spaces, slopes, and areas inaccessible to traditional equipment" },
@@ -24,8 +24,7 @@ const credentials = [
   { title: "California Contractor License (C-27)", status: "Pending", icon: "license" },
   { title: "USDOT #4530173", status: "Active", icon: "dot" },
   { title: "FMCSA Registered", status: "Active", icon: "fmcsa" },
-  { title: "Fully Insured", status: "General Liability + Commercial Auto", icon: "insurance" },
-  { title: "Drug & Alcohol Testing", status: "FMCSA Clearinghouse Compliant", icon: "testing" },
+  { title: "Insured & Bonded", status: "Fully covered so you don\u2019t have to worry", icon: "insurance" },
 ];
 
 export default function AboutPage() {
@@ -59,19 +58,18 @@ export default function AboutPage() {
               <p>
                 Fleetscape, Inc. specializes in pneumatic ground cover
                 installation for California&apos;s Central Coast from Santa
-                Barbara to Camarillo. We use Express Blower technology — the same
-                systems trusted by the largest landscape contractors in the
-                country — to deliver mulch, playground chips, compost, and
-                other ground cover materials with unmatched speed and precision.
+                Barbara to Camarillo. We deliver mulch, playground chips,
+                compost, and other ground cover materials with unmatched speed
+                and precision.
               </p>
               <p>
-                Founded by Seth and Melissa Henderson, Fleetscape exists to
-                bring commercial-grade ground cover solutions to a market
+                Fleetscape exists to bring commercial-grade ground cover
+                solutions to a market
                 that&apos;s been stuck doing things the hard way. While
                 competitors still rely on wheelbarrows and manual labor, we
-                deploy a 2015 Freightliner 114SD equipped with an Express
-                Blower EB-60 pneumatic system that can install up to 80 cubic
-                yards of material per load through 300 feet of hose.
+                deploy a specialized pneumatic blower truck system that can
+                install up to 60 cubic yards of material per load through
+                600 feet of hose.
               </p>
             </div>
           </div>
@@ -86,7 +84,7 @@ export default function AboutPage() {
               Our Equipment
             </h2>
             <p className="text-concrete mb-12">
-              2015 Freightliner 114SD with Express Blower EB-60
+              Commercial pneumatic blower truck system
             </p>
           </div>
 
@@ -94,7 +92,7 @@ export default function AboutPage() {
           <div className="mb-12 rounded-lg overflow-hidden fade-in">
             <Image
               src="/images/fleetscape-coast-truck-feature.png"
-              alt="Fleetscape 2015 Freightliner 114SD with Express Blower EB-60 on California's Central Coast"
+              alt="Fleetscape pneumatic blower truck on California's Central Coast"
               width={1536}
               height={1024}
               className="w-full h-auto"
