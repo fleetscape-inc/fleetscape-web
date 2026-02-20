@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "./ContactForm";
+import { QuoteForm } from "./QuoteForm";
 
 export const metadata: Metadata = {
   title: "Contact Fleetscape | Get a Free Estimate",
@@ -32,8 +33,74 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Grid */}
+      {/* Quote Request */}
       <section className="py-24 bg-cream">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Left: Info */}
+            <div className="fade-in">
+              <div className="font-heading text-xs uppercase tracking-widest text-gold font-semibold mb-3">
+                Free Estimate
+              </div>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-tight text-forest mb-6">
+                Request a Quote
+              </h2>
+              <p className="text-charcoal/80 leading-relaxed mb-8">
+                Tell us about your project and we&apos;ll provide a detailed
+                estimate — typically within one business day. No obligation, no
+                pressure.
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-charcoal text-sm">Free, no-obligation estimates</div>
+                    <p className="text-sm text-concrete">We&apos;ll scope your project and provide transparent pricing.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-charcoal text-sm">Fast turnaround</div>
+                    <p className="text-sm text-concrete">Most quotes returned within one business day.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-charcoal text-sm">Central Coast coverage</div>
+                    <p className="text-sm text-concrete">Santa Barbara to Ventura County and the 101 corridor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Quote Form */}
+            <div className="fade-in">
+              <QuoteForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info + General Contact Form */}
+      <section className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: Contact Info */}
@@ -104,7 +171,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right: Contact Form */}
+            {/* Right: General Contact Form */}
             <div className="fade-in">
               <ContactForm />
             </div>
