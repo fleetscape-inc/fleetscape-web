@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: Info */}
-            <div className="fade-in">
+            <div>
               <div className="font-heading text-xs uppercase tracking-widest text-gold font-semibold mb-3">
                 Free Estimate
               </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right: Quote Form */}
-            <div className="fade-in">
+            <div>
               <QuoteForm />
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: Contact Info */}
-            <div className="fade-in">
+            <div>
               <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-tight text-forest mb-8">
                 Get in Touch
               </h2>
@@ -172,7 +172,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right: General Contact Form */}
-            <div className="fade-in">
+            <div>
               <ContactForm />
             </div>
           </div>
