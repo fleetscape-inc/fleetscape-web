@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Precision Ground Cover Application",
-    description: "Municipalities, Schools, HOAs, Corporate Campuses, Golf Courses, Estates",
+    description: "Municipalities, Schools, Property Managers, HOAs, Golf Courses, Estates",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 7.5h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
@@ -72,7 +72,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed">
               Pneumatic ground cover application for Municipalities, Schools,
-              HOAs, Corporate Campuses, Golf Courses, Orchards and Estates
+              Property Managers, HOAs, Golf Courses, Orchards and Estates
               throughout California&apos;s Central Coast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
