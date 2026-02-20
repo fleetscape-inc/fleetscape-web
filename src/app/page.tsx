@@ -27,7 +27,7 @@ const services = [
     ),
   },
   {
-    title: "Landscapers",
+    title: "Fleetscape for Landscapers",
     description: "Partner with us to offer ground cover installation without the equipment investment",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
