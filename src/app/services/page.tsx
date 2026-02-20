@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -112,18 +113,30 @@ export default function ServicesPage() {
                     </div>
                   </div>
 
-                  {/* Visual placeholder */}
+                  {/* Visual */}
                   <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-forest via-forest-light to-charcoal flex items-center justify-center">
-                      <div className="text-center p-8">
-                        <div className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-tight text-white/10">
-                          0{i + 1}
-                        </div>
-                        <div className="font-heading text-xs uppercase tracking-[0.2em] text-gold/40 mt-2">
-                          {service.title}
+                    {i === 1 ? (
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                        <Image
+                          src="/images/fleetscape-playground-chips.png"
+                          alt="Engineered wood fiber playground safety surfacing installed by Fleetscape"
+                          width={1536}
+                          height={1024}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-forest via-forest-light to-charcoal flex items-center justify-center">
+                        <div className="text-center p-8">
+                          <div className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-tight text-white/10">
+                            0{i + 1}
+                          </div>
+                          <div className="font-heading text-xs uppercase tracking-[0.2em] text-gold/40 mt-2">
+                            {service.title}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>
