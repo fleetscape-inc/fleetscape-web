@@ -5,11 +5,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | Fleetscape — Pneumatic Ground Cover Installation",
   description:
-    "Precision ground cover application, playground safety surfacing, landscaper partnerships, and decorative ground cover. One truck, one operator, hundreds of cubic yards installed in hours.",
+    "Precision ground cover application, playground safety surfacing, and landscaper partnerships. One truck, one operator, hundreds of cubic yards installed in hours.",
   openGraph: {
     title: "Fleetscape Services",
     description:
-      "Precision ground cover, playground surfacing, landscaper partnerships, and decorative ground cover installation.",
+      "Precision ground cover, playground surfacing, and landscaper partnerships.",
   },
 };
 
@@ -17,11 +17,12 @@ const services = [
   {
     title: "Precision Ground Cover Application",
     description:
-      "For municipalities, schools, HOAs, corporate campuses, golf courses, and estates. Our pneumatic system installs ground cover evenly across large areas — no wheelbarrow tracks, no uneven spots, no crew trampling your landscaping. We work with bark mulch, wood chips, and shredded hardwood in any depth your specification requires.",
+      "For municipalities, schools, HOAs, corporate campuses, golf courses, resorts, and estates. Our pneumatic system installs ground cover evenly across large areas — no wheelbarrow tracks, no uneven spots, no crew trampling your landscaping. We work with bark, mulch, wood chips, topsoil, and shredded hardwood in any depth your specification requires.",
     features: [
       "Even coverage across large areas",
       "No wheelbarrow damage to existing landscaping",
-      "Bark mulch, wood chips, shredded hardwood",
+      "Bark, mulch, wood chips, topsoil, shredded hardwood",
+      "Resort and hospitality grade finishing",
       "Custom depth specifications",
     ],
   },
@@ -45,17 +46,6 @@ const services = [
       "Seamless integration with your crew",
       "Expand services without equipment investment",
       "Reliable scheduling for your project timelines",
-    ],
-  },
-  {
-    title: "Decorative Ground Cover",
-    description:
-      "Bark, mulch, and topsoil installed with precision. Whether you're refreshing a resort entrance, a golf course cart path, or a corporate campus, we deliver a finished result that looks professionally installed — because it is.",
-    features: [
-      "Bark, mulch, topsoil",
-      "Precision application for any terrain",
-      "Resort and hospitality grade finishing",
-      "Corporate campus installations",
     ],
   },
 ];
