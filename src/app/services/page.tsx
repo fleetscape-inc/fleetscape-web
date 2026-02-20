@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | Fleetscape — Pneumatic Ground Cover Installation",
   description:
-    "Precision ground cover application, playground safety surfacing, and landscaper partnerships. One truck, one operator, hundreds of cubic yards installed in hours.",
+    "Precision ground cover application, playground safety surfacing, and landscaper partnerships. One truck, hundreds of cubic yards installed in hours.",
   openGraph: {
     title: "Fleetscape Services",
     description:
@@ -38,12 +38,13 @@ const services = [
     ],
   },
   {
-    title: "Landscapers",
+    title: "Fleetscape for Landscapers",
     description:
-      "Expand your service offering without expanding your fleet. We partner with landscaping companies to provide pneumatic ground cover installation as a subcontracted service — so you can offer your clients professional-grade mulch, bark, and topsoil installation without the capital investment in specialized equipment. Keep your clients happy and your margins healthy.",
+      "Expand your service offering without expanding your fleet. We partner with landscaping companies to provide pneumatic ground cover installation as a subcontracted service — so you can offer your clients professional-grade mulch, bark, and topsoil installation without the capital investment in specialized equipment. Free your crew to focus on higher-margin work while we handle the ground cover.",
     features: [
       "White-label subcontracting available",
       "Seamless integration with your crew",
+      "Free your team for more profitable jobs",
       "Expand services without equipment investment",
       "Reliable scheduling for your project timelines",
     ],
@@ -63,8 +64,8 @@ export default function ServicesPage() {
               <span className="text-gold">Install</span>
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              One truck. One operator. Hundreds of cubic yards installed in
-              hours, not days.
+              One truck. Hundreds of cubic yards installed in hours, not
+              days.
             </p>
           </div>
         </div>
@@ -82,9 +83,6 @@ export default function ServicesPage() {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
                   {/* Content */}
                   <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="text-gold font-heading text-sm uppercase tracking-widest font-semibold mb-3">
-                      Service 0{i + 1}
-                    </div>
                     <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-tight text-forest mb-6">
                       {service.title}
                     </h2>
