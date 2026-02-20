@@ -31,9 +31,9 @@ export function Footer() {
               className="h-14 w-auto mb-6"
             />
             <p className="text-white/60 text-sm leading-relaxed">
-              Premium pneumatic ground cover installation for commercial
-              properties, municipalities, and HOAs across California&apos;s
-              Central Coast.
+              Pneumatic ground cover application for Municipalities, Schools,
+              Property Managers, HOAs, Golf Courses, Orchards and Estates
+              throughout California&apos;s Central Coast.
             </p>
           </div>
 
